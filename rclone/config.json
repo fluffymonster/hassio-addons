@@ -1,12 +1,12 @@
 {
     "name": "Rclone",
-    "version": "1.51.0",
+    "version": "dev 1.51.0",
     "slug": "rclone",
     "description": "Rclone is a command line program to sync files and directories to and from various providers.",
-    "arch": ["amd64"],
+    "arch": ["armv7", "armhf"],
     "startup": "once",
     "boot": "manual",
-    "url": "https://github.com/alex3305/hassio-addons/tree/master/rclone",
+    "url": "https://github.com/fluffymonster/hassio-addons/tree/master/rclone",
     "map": [
         "backup:rw",
         "config",
