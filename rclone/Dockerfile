@@ -9,7 +9,7 @@ ARG BUILD_REF
 ARG BUILD_VERSION
 
 # Copy root filesystem
-COPY rootfs /
+COPY run.sh /
 
 # Setup base
 RUN wget --quiet -O /tmp/rclone.zip https://downloads.rclone.org/rclone-current-linux-arm.zip
