@@ -3,7 +3,7 @@
     "version": "dev 1.51.0",
     "slug": "rclone",
     "description": "Rclone is a command line program to sync files and directories to and from various providers.",
-    "arch": ["armv7", "armhf"],
+    "arch": ["armv7"],
     "startup": "once",
     "boot": "manual",
     "url": "https://github.com/fluffymonster/hassio-addons/tree/master/rclone",
