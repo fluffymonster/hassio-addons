@@ -1,17 +1,18 @@
-ARG BUILD_FROM=hassioaddons/base:7.1.0
-# hadolint ignore=DL3006
-FROM ${BUILD_FROM}
+ARG BUILD_FROM
 
-# Build arguments
-ARG BUILD_ARCH
-ARG BUILD_DATE
-ARG BUILD_REF
+FROM $BUILD_FROM
+ENV LANG C.UTF-8
+
 ARG BUILD_VERSION
 
 COPY run.sh /
 
-# Setup base
-RUN ls
+RUN apk add --no-cache unzip findutils && \
+    wget --quiet -O /tmp/rclone.zip https://downloads.rclone.org/v${BUILD_VERSION}/rclone-v${BUILD_VERSION}-linux-amd64.zip && \
+    unzip /tmp/rclone.zip -d /tmp && \
+    cp /tmp/rclone-v${BUILD_VERSION}-linux-amd64/rclone /usr/bin/rclone && \
+    chmod a+x /usr/bin/rclone && \
+    chmod a+x /run.sh && \
+    rm -rf /tmp/*
 
-# Labels
-
+CMD [ "/run.sh" ]
