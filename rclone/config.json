@@ -6,7 +6,7 @@
     "arch": ["armv7"],
     "startup": "once",
     "boot": "manual",
-    "url": "https://github.com/fluffymonster/hassio-addons/tree/master/rclone",
+    "url": "https://github.com/fluffymonster/hassio-addons",
     "map": [
         "backup:rw",
         "config",
