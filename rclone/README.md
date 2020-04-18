@@ -7,7 +7,6 @@ Rclone bundled as an Home Assistant add-on.
 ## About
 
 Fork of `https://github.com/alex3305/hassio-addons`
-Support RPi 3
 
 ## Installation
 
@@ -95,6 +94,8 @@ The number of days the remote files are kept. Files older than this date are pru
 
 This add-on can easily be used with an automation. For instance:
 
+The name of the addon i found by going to hass.io dashboard and then selecting the RClone addon and viewing the URL.
+
 ```yaml
 - id: home_assistant_run_backup
   alias: Home Assistant backup
@@ -104,7 +105,7 @@ This add-on can easily be used with an automation. For instance:
   action:
     service: hassio.addon_start
     data_template:
-      addon: 32de6d38_rclone
+      addon: xxxxxxxx_rclone
 ```
 
 Which will prune local files and run Rclone copy at 07:30 in the morning.
