@@ -119,7 +119,7 @@ Which will prune local files and run Rclone copy at 07:30 in the morning.
 
 This project is not affiliated with Rclone, the Rclone Maintainers Team or Nick Craig-Wood, but simply a community effort. Rclone itself is distributed under the [MIT License](https://rclone.org/licence/).
 
-[aarch64-shield]: https://img.shields.io/badge/aarch64-no-red.svg
+[aarch64-shield]: https://img.shields.io/badge/aarch64-yes-green.svg
 [amd64-shield]: https://img.shields.io/badge/amd64-yes-green.svg
 [armhf-shield]: https://img.shields.io/badge/armhf-yes-green.svg
 [armv7-shield]: https://img.shields.io/badge/armv7-yes-green.svg

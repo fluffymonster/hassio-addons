@@ -1,6 +1,6 @@
-# Community Home Assistant Add-ons: basg (unofficial)
+# Community Home Assistant Add-ons: bash shell (unofficial)
 
-![Supports aarch64 Architecture][aarch64-shield] ![Supports amd64 Architecture][amd64-shield] ![Supports armhf Architecture][armhf-shield] ![Supports armv7 Architecture][armv7-shield] ![Supports i386 Architecture][i386-shield]
+![Supports aarch64 Architecture][aarch64-shield] ![Supports amd64 Architecture][amd64-shield] ![Supports armhf Architecture][armhf-shield] ![Supports armv7 Architecture][armv7-shield]
 
 ## About
 
@@ -24,7 +24,7 @@ Follow these steps to get the add-on installed on your system:
 
 This is only a demonstration project
 
-[aarch64-shield]: https://img.shields.io/badge/aarch64-no-red.svg
+[aarch64-shield]: https://img.shields.io/badge/aarch64-yes-green.svg
 [amd64-shield]: https://img.shields.io/badge/amd64-yes-green.svg
 [armhf-shield]: https://img.shields.io/badge/armhf-yes-green.svg
 [armv7-shield]: https://img.shields.io/badge/armv7-yes-green.svg
