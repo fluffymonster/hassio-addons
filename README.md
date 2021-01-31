@@ -1,7 +1,6 @@
 # hassio-addons by Fluffy Monster
 
 This repository contains Hass.io Add-ons for use within [Home Assistant](https://www.home-assistant.io/hassio/). 
-Fork of (`https://github.com/alex3305/hassio-addons`)
 
 ## Usage
 
