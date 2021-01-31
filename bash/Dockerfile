@@ -21,7 +21,7 @@ ARG BUILD_VERSION
 # Setup base system
 RUN apk update
 	
-CMD [ "/bin/bash" ]
+CMD [ "/bin/sh" ]
 
 # Labels
 LABEL \
