@@ -7,7 +7,9 @@ ENV LANG C.UTF-8
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 
 # Copy data for add-on
-COPY 
+COPY . /app
+
+WORKDIR /app
 
 # Build arguments
 ARG BUILD_ARCH
@@ -19,7 +21,7 @@ ARG BUILD_REPOSITORY
 ARG BUILD_VERSION
 
 # Setup base system
-RUN 
+RUN apt update
 	
 CMD [ "/bin/bash" ]
 
@@ -30,11 +32,11 @@ LABEL \
     io.hass.arch="${BUILD_ARCH}" \
     io.hass.type="addon" \
     io.hass.version=${BUILD_VERSION} \
-    maintainer="Franck Nijhof <frenck@addons.community>" \
+    maintainer="Fluffy Monster <fluffy.monster@gmail.com>" \
     org.opencontainers.image.title="${BUILD_NAME}" \
     org.opencontainers.image.description="${BUILD_DESCRIPTION}" \
     org.opencontainers.image.vendor="Home Assistant Community Add-ons" \
-    org.opencontainers.image.authors="Franck Nijhof <frenck@addons.community>" \
+    org.opencontainers.image.authors="Fluffy Monster <fluffy.monster@gmail.com>" \
     org.opencontainers.image.licenses="MIT" \
     org.opencontainers.image.url="https://addons.community" \
     org.opencontainers.image.source="https://github.com/${BUILD_REPOSITORY}" \
