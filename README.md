@@ -13,5 +13,6 @@ Fork of (`https://github.com/alex3305/hassio-addons`)
 ## Add-ons
 
 * [Rclone](rclone/README.md)
+* [BashShell](bash/README.md)
 
 
