@@ -7,9 +7,7 @@ ENV LANG C.UTF-8
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 
 # Copy data for add-on
-COPY . /app
-
-WORKDIR /app
+COPY rootfs /
 
 # Build arguments
 ARG BUILD_ARCH
@@ -21,7 +19,7 @@ ARG BUILD_REPOSITORY
 ARG BUILD_VERSION
 
 # Setup base system
-RUN apt update
+RUN apk update
 	
 CMD [ "/bin/bash" ]
 
