@@ -5,7 +5,7 @@ This repository contains Hass.io Add-ons for use within [Home Assistant](https:/
 ## Usage
 
 1. Navigate in your Home Assistant frontend to __Supervisor -> Add-on Store__
-2. Add this new repository by URL (``)
+2. Add this new repository by URL (http://www.github.com/fluffymonster/hassio-addons)
 3. Find the add-on that you want to use and click it
 4. Click on the "INSTALL" button
 
@@ -13,5 +13,6 @@ This repository contains Hass.io Add-ons for use within [Home Assistant](https:/
 
 * [Rclone](rclone/README.md)
 * [BashShell](bash/README.md)
-
-
+* [WeeWX Simulator](weewx_sim/README.md)
+* [WeeWX Gateway 1](weewx_g1/README.md)
+* [WeeWX Gateway 2](weewx_g2/README.md)

@@ -1,0 +1,77 @@
+{
+  "name": "WeeWX Simulator",
+  "version": "1.00",
+  "slug": "weewx_sim",
+  "description": "Weather capture server. Simulated",
+  "arch": ["armhf", "armv7", "aarch64"],
+  "startup": "application",
+  "boot": "auto",
+  "services": ["mqtt:need"],
+  "map": [
+    "backup:rw",
+    "config",
+    "share"
+  ],
+  "options": {
+    "Station": {
+		"location": "Simulator",
+		"latitude": "-38.000000",
+		"longitude": "145.000000",
+		"altitude": "150, meter",
+		"start_of_week": 0
+	},
+	"RSYNC": {
+       "enable": false,
+	   "server": "",
+	   "user": "",
+	   "password": "",
+	   "path": ""
+	},
+	"Logging": {
+		"log_success": true,
+		"log_failure": true
+	},
+    "MQTT": {
+	  "server_url": "mqtt://user:password@url:port/",
+      "topic": "weewx_sim",
+      "unit_system": "METRIC",
+      "aggregation": "individual"		
+	},
+	"Skins": {
+	  "date_format": "%d-%b-%Y %H:%M"
+	},
+	"Maintenance": false
+  },
+  "schema": {
+    "Station": {
+		"location": "str",
+		"latitude": "str",
+		"longitude": "str",
+		"altitude": "str",
+		"start_of_week": "int(0,6)"
+	},
+	"Logging": {
+		"log_success": "bool",
+		"log_failure": "bool"
+	},
+    "MQTT": {
+	    "server_url": "str",
+        "topic": "str",
+        "unit_system": "str",
+        "aggregation": "str"		
+	  },
+	"RSYNC": {
+		"enable": "bool",
+		"server": "str",
+		"user": "str",
+		"password": "password",
+		"path": "str"
+	},
+	"Skins": {
+	    "date_format": "str"
+	},
+	"Maintenance": "bool"
+  },
+  "ports": {
+  }
+}
