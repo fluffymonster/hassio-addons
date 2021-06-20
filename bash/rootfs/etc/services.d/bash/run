@@ -1,0 +1,10 @@
+#!/usr/bin/with-contenv bashio
+# ==============================================================================
+# Home Assistant Community Add-on: Bash
+# Runs the named daemon
+# ==============================================================================
+
+bashio::log.info "Starting Bash..."
+
+# keep container open
+tail -f /dev/null

@@ -21,8 +21,6 @@ ARG BUILD_VERSION
 # Setup base system
 RUN apk update
 	
-# CMD [ "/bin/sh" ]
-
 # Labels
 LABEL \
     io.hass.name="${BUILD_NAME}" \

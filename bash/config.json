@@ -1,8 +1,9 @@
 {
     "name": "bash",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "slug": "bash",
     "description": "Bash CLI for container testing.",
+    "url": "https://github.com/fluffymonster/hassio-addons",
     "arch": ["aarch64","armv7"],
     "startup": "once",
     "boot": "manual",
