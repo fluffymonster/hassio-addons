@@ -1,7 +1,7 @@
 Testing GW1000 Gateway
 150, meter
--38.191362
-145.114918
+-37.85
+144.97
 n
 metric
 3
