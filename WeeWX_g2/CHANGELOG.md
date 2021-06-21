@@ -1,0 +1,4 @@
+- WeeWX server running in simulation mode
+- WeeWX server 4.5.1
+- MQTT enabled
+- Inteceptor enabled

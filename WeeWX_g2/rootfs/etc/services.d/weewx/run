@@ -1,0 +1,17 @@
+#!/usr/bin/with-contenv bashio
+# ==============================================================================
+# Home Assistant Community Add-on: WeeWX_g2
+# Runs the named daemon
+# ==============================================================================
+
+bashio::log.info "Starting WeeWX Gateway 2..."
+
+cd /home/weewx
+if bashio::config.true 'Maintenance'; then
+	bashio::log.warning "Running in maintenance mode"
+	bashio::log.warning "You will need to manually start Weewx"
+	bashio::log.warning "using: ./bin/weewxd"
+	tail -f /dev/null
+else
+	./bin/weewxd >/dev/null 2>&1
+fi
