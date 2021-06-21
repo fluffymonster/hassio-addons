@@ -27,14 +27,14 @@ Station:
   latitude:
   longitude:
   altitude:
-  start_of_week
+  start_of_week:
 RSYNC:
   enable:
   server:
-  user
+  user:
   password:
   path:
-Logging
+Logging:
   log_sucess:
   log_failure:
 MQTT:

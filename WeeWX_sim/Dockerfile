@@ -9,11 +9,9 @@ ARG WEEWX_SHA=9650f9a4ce0f300a652d926820bc5b683a1826fd668c0e71413e88c772d7f056
 ARG WEEGREEN_VERSION=v0.12
 ARG WX_GROUP=dialout
 ARG WX_UID=2071
-ARG XTIDE_SHA=e5c4afbb17269fdde296e853f2cb84845ed1c1bb1932f780047ad71d623bc681
 
 # Copy data for add-on
 COPY setup/ /tmp/setup/
-
 
 RUN apk add --no-cache --update \
       curl freetype libjpeg libstdc++ openssh openssl python3 py3-cheetah \
@@ -41,8 +39,6 @@ RUN apk add --no-cache --update \
 	  bin/wee_extension --install /tmp/extension/weewx-interceptor.zip 
 
 COPY rootfs /
-
-#CMD [ "/tmp/setup/run.sh" ]
 
 # Labels
 LABEL \
