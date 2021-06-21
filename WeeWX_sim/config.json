@@ -3,6 +3,7 @@
   "version": "1.00",
   "slug": "weewx_sim",
   "description": "Weather capture server. Simulated",
+  "url": "https://github.com/fluffymonster/hassio-addons",
   "arch": ["armhf", "armv7", "aarch64"],
   "startup": "application",
   "boot": "auto",
@@ -15,8 +16,8 @@
   "options": {
     "Station": {
 		"location": "Simulator",
-		"latitude": "-38.000000",
-		"longitude": "145.000000",
+		"latitude": "-37.850000",
+		"longitude": "144.970000",
 		"altitude": "150, meter",
 		"start_of_week": 0
 	},
