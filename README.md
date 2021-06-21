@@ -13,6 +13,6 @@ This repository contains Hass.io Add-ons for use within [Home Assistant](https:/
 
 * [Rclone](rclone/README.md)
 * [BashShell](bash/README.md)
-* [WeeWX Simulator](weewx_sim/README.md)
-* [WeeWX Gateway 1](weewx_g1/README.md)
-* [WeeWX Gateway 2](weewx_g2/README.md)
+* [WeeWX Simulator](WeeWX_sim/README.md)
+* [WeeWX Gateway 1](WeeWX_g1/README.md)
+* [WeeWX Gateway 2](WeeWX_g2/README.md)
