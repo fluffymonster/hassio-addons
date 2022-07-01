@@ -1,7 +1,8 @@
 {
   "name": "RClone",
-  "version": "1.53.3",
+  "version": "1.58.1",
   "slug": "rclone",
+  "init": "false",
   "description": "Rclone is a command line program to sync files and directories to and from various providers.",
   "arch": ["aarch64","armv7", "armhf", "amd64", "i386"],
   "startup": "once",
