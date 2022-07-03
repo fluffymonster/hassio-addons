@@ -10,7 +10,7 @@
   "map": [
     "backup:rw",
     "config",
-    "share"
+    "share:rw"
   ],
   "options": {
     "configuration_path": "/share/rclone/rclone.conf",

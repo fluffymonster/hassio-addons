@@ -8,6 +8,8 @@ REMOTE_PATH=$(bashio::config 'remote_path')
 LOCAL_RETENTION=$(bashio::config 'local_retention_days')
 REMOTE_RETENTION=$(bashio::config 'remote_retention_days')
 
+rclone --version
+
 bashio::log.info "Pruning local files..."
 find /backup/ -mtime +${LOCAL_RETENTION} -type f -delete
 bashio::log.info "Pruning local files finished"
