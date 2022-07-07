@@ -1,4 +1,3 @@
 # Change log for Bash CLI
 
-## Add CHANGELOG.md
-## Add DOCS.md
+## Support for s6-Overlay v3
