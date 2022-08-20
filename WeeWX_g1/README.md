@@ -1,4 +1,4 @@
-# Community Home Assistant Add-ons: WeeWX Gateway 2
+# Community Home Assistant Add-ons: WeeWX Gateway 1
 
 ![Supports aarch64 Architecture][aarch64-shield] ![Supports amd64 Architecture][amd64-shield] ![Supports armhf Architecture][armhf-shield] ![Supports armv7 Architecture][armv7-shield] ![Supports i386 Architecture][i386-shield]
 
@@ -8,7 +8,8 @@ WeeWX is a free, open source, software program, written in Python, which interac
 WeeWX runs under most versions of Linux, as well as macOS, *BSD, and Solaris. Many users are running on the Raspberry Pi. The images on this page and throughout this web site are from sample stations running WeeWX.
 Thousands of stations throughout the world run WeeWX, many of whom have opted-in to be shown on our station map.
 
-Second instance that supports ecowitt GW1000 WiFi gateway
+First instance that supports ecowitt GW1000 WiFi gateway
+Added support for lightning module using fra202088 weewx-interceptor version
 
 ## Installation
 

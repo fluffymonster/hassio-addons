@@ -33,10 +33,14 @@ RUN apk add --no-cache --update \
       ./setup.py build && ./setup.py install < /tmp/setup/install-input.txt && \
 	  mkdir /tmp/extension && cd /tmp/extension && \
 	  wget -O weewx-mqtt.zip https://github.com/matthewwall/weewx-mqtt/archive/master.zip && \
-	  wget -O weewx-interceptor.zip https://github.com/matthewwall/weewx-interceptor/archive/master.zip && \
+	  wget -O weewx-interceptor.zip https://github.com/fra202088/weewx-interceptor/archive/master.zip && \
 	  pip3 install paho-mqtt && cd /home/weewx && \
 	  bin/wee_extension --install /tmp/extension/weewx-mqtt.zip && \
 	  bin/wee_extension --install /tmp/extension/weewx-interceptor.zip 
+
+# Original Interceptor is by matthewwall
+# https://github.com/matthewwall/weewx-interceptor/archive/master.zip
+# https://github.com/fra202088/weewx-interceptor/archive/master.zip
 
 COPY rootfs /
 
