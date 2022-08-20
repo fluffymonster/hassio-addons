@@ -1,7 +1,8 @@
 {
   "name": "WeeWX Gateway 2",
-  "version": "1.00",
+  "version": "1.01",
   "slug": "weewx_g2",
+  "init": "false",
   "description": "Weather capture server. Gateway 2",
   "url": "https://github.com/fluffymonster/hassio-addons",
   "arch": ["armhf", "armv7", "aarch64"],
