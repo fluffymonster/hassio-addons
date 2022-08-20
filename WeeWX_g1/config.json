@@ -1,6 +1,6 @@
 {
   "name": "WeeWX Gateway 1",
-  "version": "1.02",
+  "version": "1.03",
   "slug": "weewx_g1",
   "init": "false",
   "description": "Weather capture server. Gateway 1",
