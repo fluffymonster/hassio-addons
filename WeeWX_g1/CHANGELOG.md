@@ -3,3 +3,4 @@
 - MQTT enabled
 - Inteceptor enabled ( lightning enabled)
 - Support for s6-Overlay v3
+- permissions on run/finish scripts
