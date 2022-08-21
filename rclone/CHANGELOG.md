@@ -1,4 +1,4 @@
-- Update rclone to 1.58.1
+- Update rclone to 1.59.1
 - Support for s6-Overlay v3
 - Display RClone version in log
 - Change permissions to support OneDrive
