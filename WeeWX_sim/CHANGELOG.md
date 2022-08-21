@@ -1,2 +1,4 @@
 - WeeWX server running in simulation mode
 - WeeWX server 4.5.1
+- Support for s6-Overlay v3
+- permissions on run/finish scripts
