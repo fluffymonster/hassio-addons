@@ -42,6 +42,6 @@ COPY rootfs /
 
 # Labels
 LABEL \
-    io.hass.arch="armhf|aarch64" \
+    io.hass.arch="armhf|aarch64|i386" \
     io.hass.type="addon" \
     io.hass.version=${BUILD_VERSION}
