@@ -1,4 +1,4 @@
-# Home Assitant Add-on: WeeWX Sumulator
+# Home Assitant Add-on: WeeWX Simulator
 
 ## Installation
 
