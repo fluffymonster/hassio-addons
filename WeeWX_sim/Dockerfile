@@ -16,7 +16,7 @@ ARG ARCHIVE="weewx-${WEEWX_VERSION}.tar.gz"
 WORKDIR /tmp
 
 # Copy data for add-on
-COPY run.sh /
+#COPY run.sh /
 COPY setup/ /tmp/setup/
 
 # Build environment
