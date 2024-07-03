@@ -163,7 +163,7 @@ version = 4.5.1
     SKIN_ROOT = skins
     
     # Where the generated reports should go, relative to WEEWX_ROOT
-    HTML_ROOT = public_html
+    HTML_ROOT = ../../share/{{ .HTML_ROOT}}
     
     # The database binding indicates which data should be used in reports.
     data_binding = wx_binding

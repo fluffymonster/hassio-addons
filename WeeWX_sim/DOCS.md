@@ -28,6 +28,8 @@ Station:
   longitude:
   altitude:
   start_of_week:
+Web:
+  HTML_ROOT:
 RSYNC:
   enable:
   server:
@@ -52,8 +54,12 @@ Station configurations
 
 #### location
 
+### Option: 'Web' (required)
+
+#### HTML_ROOT
+Path for storing the HTML generated from reports. 
 ### Option: 'RSYNC' (required)
-When enabled, will send the Seasons report generated to the configured path
+When enabled, will send the Seasons report generated to the configured path, appended to /share/
 
 #### enable
 

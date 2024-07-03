@@ -1,79 +1,86 @@
 {
-  "name": "WeeWX Simulator",
-  "version": "1.02",
-  "slug": "weewx_sim",
-  "init": "false",
-  "description": "Weather capture server. Simulated",
-  "url": "https://github.com/fluffymonster/hassio-addons",
-  "arch": ["armhf", "armv7", "aarch64", "i386"],
-  "startup": "application",
-  "boot": "auto",
-  "services": ["mqtt:need"],
-  "map": [
-    "backup:rw",
-    "config",
-    "share"
-  ],
-  "options": {
-    "Station": {
-		"location": "Simulator",
-		"latitude": "-37.850000",
-		"longitude": "144.970000",
-		"altitude": "150, meter",
-		"start_of_week": 0
-	},
-	"RSYNC": {
-       "enable": false,
-	   "server": "",
-	   "user": "",
-	   "password": "",
-	   "path": ""
-	},
-	"Logging": {
-		"log_success": true,
-		"log_failure": true
-	},
-    "MQTT": {
-	  "server_url": "mqtt://user:password@url:port/",
-      "topic": "weewx_sim",
-      "unit_system": "METRIC",
-      "aggregation": "individual"		
-	},
-	"Skins": {
-	  "date_format": "%d-%b-%Y %H:%M"
-	},
-	"Maintenance": false
-  },
-  "schema": {
-    "Station": {
-		"location": "str",
-		"latitude": "str",
-		"longitude": "str",
-		"altitude": "str",
-		"start_of_week": "int(0,6)"
-	},
-	"Logging": {
-		"log_success": "bool",
-		"log_failure": "bool"
-	},
-    "MQTT": {
-	    "server_url": "str",
-        "topic": "str",
-        "unit_system": "str",
-        "aggregation": "str"		
+	"name": "WeeWX Simulator",
+	"version": "1.04",
+	"slug": "weewx_sim",
+	"init": "false",
+	"description": "Weather capture server. Simulated",
+	"url": "https://github.com/fluffymonster/hassio-addons",
+	"arch": ["armhf", "armv7", "aarch64", "i386"],
+	"startup": "application",
+	"boot": "auto",
+	"services": ["mqtt:need"],
+	"map": [
+	  "backup",
+	  "config",
+	  "share:rw"
+	],
+	"options": {
+	  "Station": {
+		  "location": "Simulator",
+		  "latitude": "-37.850000",
+		  "longitude": "144.970000",
+		  "altitude": "150, meter",
+		  "start_of_week": 0
 	  },
-	"RSYNC": {
-		"enable": "bool",
-		"server": "str",
-		"user": "str",
-		"password": "password",
-		"path": "str"
+	  "Web": {
+		  "HTML_ROOT": "weewx/weeex_sim"
+	  },
+	  "RSYNC": {
+		 "enable": false,
+		 "server": "",
+		 "user": "",
+		 "password": "",
+		 "path": ""
+	  },
+	  "Logging": {
+		  "log_success": true,
+		  "log_failure": true
+	  },
+	  "MQTT": {
+		"server_url": "mqtt://user:password@url:port/",
+		"topic": "weewx_sim",
+		"unit_system": "METRIC",
+		"aggregation": "individual"		
+	  },
+	  "Skins": {
+		"date_format": "%d-%b-%Y %H:%M"
+	  },
+	  "Maintenance": false
 	},
-	"Skins": {
-	    "date_format": "str"
+	"schema": {
+	  "Station": {
+		  "location": "str",
+		  "latitude": "str",
+		  "longitude": "str",
+		  "altitude": "str",
+		  "start_of_week": "int(0,6)"
+	  },
+	  "Web": {
+		  "HTML_ROOT": "str" 
+	  },
+	  "Logging": {
+		  "log_success": "bool",
+		  "log_failure": "bool"
+	  },
+	  "MQTT": {
+		  "server_url": "str",
+		  "topic": "str",
+		  "unit_system": "str",
+		  "aggregation": "str"		
+		},
+	  "RSYNC": {
+		  "enable": "bool",
+		  "server": "str",
+		  "user": "str",
+		  "password": "password",
+		  "path": "str"
+	  },
+	  "Skins": {
+		  "date_format": "str"
+	  },
+	  "Maintenance": "bool"
 	},
-	"Maintenance": "bool"
-  },
-  "ports": {
+	"ports": {
+	}
   }
-}
+  
