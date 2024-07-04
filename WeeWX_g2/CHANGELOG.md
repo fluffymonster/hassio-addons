@@ -3,3 +3,6 @@
 - WeeWX server 4.5.1
 - MQTT enabled
 - Inteceptor enabled
+- Add i386
+- Add configuration for HTML output
+- Use Ubuntu (instead of Alpine)

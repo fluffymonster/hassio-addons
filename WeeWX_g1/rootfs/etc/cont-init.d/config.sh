@@ -20,8 +20,15 @@ if bashio::fs.file_exists "~/.ssh/known_hosts"
 then
 	rm ~/.ssh/known_hosts
 fi
+
+if bashio::config.has_value "RSYNC.password"
 # we should test if RSYNC.password is set or report error at least
-sshpass -p "$(bashio::config 'RSYNC.password')"  ssh-copy-id -o StrictHostKeyChecking=no ${RSYNC_URL} >/dev/null 2>&1
+then
+	bashio::log.info "Store RSYNC key"
+	sshpass -p "$(bashio::config 'RSYNC.password')" ssh-copy-id -o StrictHostKeyChecking=no ${RSYNC_URL} >/dev/null 2>&1
+else
+	bashio::log.info "No RSYNC password configured"
+fi
 
 bashio::log.info "Configuring WeeWX Service.."
 
@@ -41,6 +48,7 @@ bashio::var.json \
 	RSYNC_server "$(bashio::config 'RSYNC.server')" \
 	RSYNC_user "$(bashio::config 'RSYNC.user')" \
 	RSYNC_path "$(bashio::config 'RSYNC.path')" \
+	HTML_ROOT "$(bashio::config 'Web.HTML_ROOT')" \
 	| tempio \
      -template /usr/share/tempio/weewx.conf.gtpl \
      -out "${CONFIG}"

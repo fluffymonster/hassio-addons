@@ -1,18 +1,18 @@
 {
   "name": "WeeWX Gateway 2",
-  "version": "1.01",
+  "version": "1.04",
   "slug": "weewx_g2",
   "init": "false",
   "description": "Weather capture server. Gateway 2",
   "url": "https://github.com/fluffymonster/hassio-addons",
-  "arch": ["armhf", "armv7", "aarch64"],
+  "arch": ["armhf", "armv7", "aarch64", "i386"],
   "startup": "application",
   "boot": "auto",
   "services": ["mqtt:need"],
   "map": [
-    "backup:rw",
+    "backup",
     "config",
-    "share"
+    "share:rw"
   ],
   "options": {
     "Station": {
@@ -21,6 +21,9 @@
 		"longitude": "144.970000",
 		"altitude": "150, meter",
 		"start_of_week": 0
+	},
+		"Web": {
+		"HTML_ROOT": "weewx/weeex_sim"
 	},
 	"RSYNC": {
        "enable": false,
@@ -51,6 +54,9 @@
 		"longitude": "str",
 		"altitude": "str",
 		"start_of_week": "int(0,6)"
+	},
+	"Web": {
+		"HTML_ROOT": "str" 
 	},
 	"Logging": {
 		"log_success": "bool",

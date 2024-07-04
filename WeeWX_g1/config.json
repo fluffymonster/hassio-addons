@@ -1,6 +1,6 @@
 {
   "name": "WeeWX Gateway 1",
-  "version": "1.03",
+  "version": "1.04",
   "slug": "weewx_g1",
   "init": "false",
   "description": "Weather capture server. Gateway 1",
@@ -10,9 +10,9 @@
   "boot": "auto",
   "services": ["mqtt:need"],
   "map": [
-    "backup:rw",
+    "backup",
     "config",
-    "share"
+    "share:rw"
   ],
   "options": {
     "Station": {
@@ -21,6 +21,9 @@
 		"longitude": "144.970000",
 		"altitude": "150, meter",
 		"start_of_week": 0
+	},
+	"Web": {
+		"HTML_ROOT": "weewx/weeex_sim"
 	},
 	"RSYNC": {
        "enable": false,
@@ -51,6 +54,9 @@
 		"longitude": "str",
 		"altitude": "str",
 		"start_of_week": "int(0,6)"
+	},
+	"Web": {
+		"HTML_ROOT": "str" 
 	},
 	"Logging": {
 		"log_success": "bool",

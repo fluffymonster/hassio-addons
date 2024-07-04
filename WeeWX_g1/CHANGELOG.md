@@ -4,3 +4,6 @@
 - Inteceptor enabled ( lightning enabled)
 - Support for s6-Overlay v3
 - permissions on run/finish scripts
+- Add i386
+- Add configuration for HTML output
+- Use Ubuntu (instead of Alpine)
