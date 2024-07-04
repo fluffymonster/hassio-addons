@@ -5,7 +5,7 @@
   "init": "false",
   "description": "Weather capture server. Gateway 1",
   "url": "https://github.com/fluffymonster/hassio-addons",
-  "arch": ["armhf", "armv7", "aarch64"],
+  "arch": ["armhf", "armv7", "aarch64", "i386"],
   "startup": "application",
   "boot": "auto",
   "services": ["mqtt:need"],
