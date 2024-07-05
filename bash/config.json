@@ -1,11 +1,11 @@
 {
     "name": "bash",
-    "version": "1.1.0",
+    "version": "1.2.0",
     "slug": "bash",
     "init": "false",
     "description": "Bash CLI for container testing.",
     "url": "https://github.com/fluffymonster/hassio-addons",
-    "arch": ["aarch64","armv7"],
+    "arch": ["armhf", "armv7", "aarch64", "i386"],
     "startup": "once",
     "boot": "manual",
     "map": [

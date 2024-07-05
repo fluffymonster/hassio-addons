@@ -1,6 +1,6 @@
 {
   "name": "WeeWX Gateway 1",
-  "version": "1.04",
+  "version": "1.05",
   "slug": "weewx_g1",
   "init": "false",
   "description": "Weather capture server. Gateway 1",
@@ -23,7 +23,7 @@
 		"start_of_week": 0
 	},
 	"Web": {
-		"HTML_ROOT": "weewx/weeex_sim"
+		"HTML_ROOT": "weewx/weeex_g1"
 	},
 	"RSYNC": {
        "enable": false,
