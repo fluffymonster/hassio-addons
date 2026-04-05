@@ -5,7 +5,7 @@
     "init": "false",
     "description": "Bash CLI for container testing.",
     "url": "https://github.com/fluffymonster/hassio-addons",
-    "arch": ["amd64", "aarch64", "armv7"],
+    "arch": ["amd64"],
     "startup": "once",
     "boot": "manual",
     "map": [
