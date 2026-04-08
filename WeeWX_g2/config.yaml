@@ -1,7 +1,7 @@
 name: "WeeWX Gateway 2"
 description: "Weather capture server. Gateway 2"
 url: "https://github.com/fluffymonster/hassio-addons"
-version: "1.06"
+version: "1.07"
 slug: "weewx_g2"
 init: false
 arch:
@@ -67,7 +67,7 @@ schema:
   Skins: 
     date_format: str
   Maintenance: bool
-ports":
+ports:
   8000/tcp: 8001
 ports_description:
   8000/tcp: "Interceptor Listen socket"
