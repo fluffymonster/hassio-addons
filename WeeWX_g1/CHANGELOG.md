@@ -1,9 +1,28 @@
-- Listen on port 8000
-- WeeWX server 4.5.1
-- MQTT enabled
-- Inteceptor enabled ( lightning enabled)
-- Support for s6-Overlay v3
-- permissions on run/finish scripts
-- Add i386
-- Add configuration for HTML output
-- Use Ubuntu (instead of Alpine)
+## [1.0.6] (2026-04-08)
+
+### 🚀 Features
+
+* Change to 64bit architecture
+* Require re installtion (Don't forget to backup DB file)
+
+### 🛠️ Fixes
+
+* none
+
+## [1.0.4] (2024-06-04)
+
+### 🚀 Features
+
+* Listen on port 8000
+* WeeWX server 4.5.1
+* MQTT enabled
+* Inteceptor enabled ( lightning enabled)
+* Support for s6-Overlay v3
+* permissions on run/finish scripts
+* Add i386
+* Add configuration for HTML output
+* Use Ubuntu (instead of Alpine)
+
+### 🛠️ Fixes
+
+* none
