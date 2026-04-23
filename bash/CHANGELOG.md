@@ -1,3 +1,19 @@
-# Change log for Bash CLI
+## [1.3.2] (2026-04-23)
 
-## Use yaml config file
+### 🚀 Features
+
+* None
+
+### 🛠️ Fixes
+
+* map incorrect when RO on config.yaml
+
+## [1.3.1] (2026-04-01)
+
+### 🚀 Features
+
+* Change to 64bit architecture
+
+### 🛠️ Fixes
+
+* none

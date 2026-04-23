@@ -1,7 +1,7 @@
 name: "BASH local"
 description: "Bash CLI for container testing."
 url: "https://github.com/fluffymonster/hassio-addons"
-version: "1.3.1"
+version: "1.3.2"
 slug: "bash"
 init: false
 arch:
@@ -10,6 +10,6 @@ arch:
 boot: manual
 startup: once
 map:
-  - share:r
-  - config:r
+  - share
+  - config
   - backup:rw
