@@ -7,6 +7,7 @@
 ### 🛠️ Fixes
 
 * map incorrect when RO on config.yaml
+* poluate build_from
 
 ## [1.3.1] (2026-04-01)
 
