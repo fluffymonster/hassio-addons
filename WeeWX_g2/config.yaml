@@ -1,7 +1,7 @@
 name: "WeeWX Gateway 2"
 description: "Weather capture server. Gateway 2"
 url: "https://github.com/fluffymonster/hassio-addons"
-version: "1.07"
+version: "1.08"
 slug: "weewx_g2"
 init: false
 arch:
@@ -11,8 +11,8 @@ boot: auto
 startup: application
 map:
   - share:rw
-  - config:r
-  - backup:r
+  - config
+  - backup
 services:
   - mqtt:need
 options:

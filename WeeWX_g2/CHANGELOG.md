@@ -1,3 +1,9 @@
+## [1.0.8] (2026-04-25)
+
+### 🛠️ Fixes
+
+* Mapping of shared folders
+
 ## [1.0.7] (2026-04-09)
 
 ### 🛠️ Fixes

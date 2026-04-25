@@ -1,7 +1,7 @@
 name: "WeeWX Simulator"
 description: "Weather capture server. Simulated"
 url: "https://github.com/fluffymonster/hassio-addons"
-version: "1.05"
+version: "1.06"
 slug: "weewx_sim"
 init: false
 arch:
@@ -11,8 +11,8 @@ boot: auto
 startup: application
 map:
   - share:rw
-  - config:r
-  - backup:r
+  - config
+  - backup
 services:
   - mqtt:need
 options:
